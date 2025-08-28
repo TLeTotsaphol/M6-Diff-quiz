@@ -377,12 +377,12 @@
                 { question: "f(x) = (x^2+1)\\sqrt{x}", choices: ["f'(x) = 2x\\sqrt{x} + \\frac{x^2+1}{2\\sqrt{x}}", "f'(x) = \\frac{5x^2+1}{2\\sqrt{x}}", "f'(x) = \\frac{3x^2+1}{2\\sqrt{x}}", "f'(x) = 2x + \\frac{1}{2\\sqrt{x}}"], correct: 1, type: "product" },
                 { question: "f(x) = \\sqrt[3]{x^2+1}", choices: ["f'(x) = \\frac{2x}{3(x^2+1)^{2/3}}", "f'(x) = \\frac{1}{3(x^2+1)^{2/3}}", "f'(x) = \\frac{2x}{3\\sqrt[3]{x^2+1}}", "f'(x) = \\frac{x}{3(x^2+1)^{2/3}}"], correct: 0, type: "composite" },
                 { question: "f(x) = \\frac{\\sqrt{x}}{x+1}", choices: ["f'(x) = \\frac{1-x}{2\\sqrt{x}(x+1)^2}", "f'(x) = \\frac{1-2x}{2\\sqrt{x}(x+1)^2}", "f'(x) = \\frac{1}{\\sqrt{x}(x+1)^2}", "f'(x) = \\frac{1+x}{2\\sqrt{x}(x+1)^2}"], correct: 0, type: "quotient" },
-                { question: "f(x) = x e^x", choices: ["f'(x) = e^x", "f'(x) = xe^x", "f'(x) = e^x(x+1)", "f'(x) = e^x+1"], correct: 2, type: "product" },
-                { question: "f(x) = \\frac{e^x}{x}", choices: ["f'(x) = \\frac{e^x(x-1)}{x^2}", "f'(x) = e^x", "f'(x) = \\frac{e^x}{1}", "f'(x) = \\frac{e^x(x+1)}{x^2}"], correct: 0, type: "quotient" },
-                { question: "f(x) = (\\ln x)^2", choices: ["f'(x) = 2\\ln x", "f'(x) = \\frac{2}{x}", "f'(x) = \\frac{2\\ln x}{x}", "f'(x) = \\frac{1}{x^2}"], correct: 2, type: "composite" },
-                { question: "f(x) = \\sin(x^2)", choices: ["f'(x) = \\cos(x^2)", "f'(x) = 2x\\cos(x^2)", "f'(x) = 2\\sin x \\cos x", "f'(x) = -2x\\cos(x^2)"], correct: 1, type: "composite" },
-                { question: "f(x) = x^2 \\cos x", choices: ["f'(x) = 2x\\cos x - x^2\\sin x", "f'(x) = -2x\\sin x", "f'(x) = 2x\\cos x + x^2\\sin x", "f'(x) = 2x(-\\sin x)"], correct: 0, type: "product" },
-                { question: "f(x) = e^{3x+1}", choices: ["f'(x) = e^{3x+1}", "f'(x) = (3x+1)e^{3x}", "f'(x) = 3e^{3x+1}", "f'(x) = 3e^{3x}"], correct: 2, type: "composite" }
+                { question: "f(x) = \\frac{2x^2-3}{x+2}", choices: ["f'(x) = \\frac{2x^2+8x+3}{(x+2)^2}", "f'(x) = \\frac{4x}{1}", "f'(x) = \\frac{2x^2-8x-3}{(x+2)^2}", "f'(x) = \\frac{6x^2+8x-3}{(x+2)^2}"], correct: 0, type: "quotient" },
+                { question: "f(x) = (x^2-1)^2(x+3)", choices: ["f'(x) = (x^2-1)(5x^2+12x-1)", "f'(x) = 2(x^2-1)(2x)", "f'(x) = (x^2-1)(5x^2+12x+1)", "f'(x) = 4x(x+3)"], correct: 0, type: "product" },
+                { question: "f(x) = (x^2+3)^{\\frac{3}{2}}", choices: ["f'(x) = \\frac{3}{2}(x^2+3)^{\\frac{1}{2}}(2x)", "f'(x) = 3x\\sqrt{x^2+3}", "f'(x) = \\frac{3}{2}\\sqrt{x^2+3}", "f'(x) = 3x(x^2+3)"], correct: 1, type: "composite" },
+                { question: "f(x) = x^{-2}(x^3+4)", choices: ["f'(x) = -2x^{-3}(3x^2)", "f'(x) = 1+8x^{-3}", "f'(x) = 1-8x^{-1}", "f'(x) = 1 - 8x^{-3}"], correct: 3, type: "product" },
+                { question: "f(x) = \\frac{x}{\\sqrt{x^2+1}}", choices: ["f'(x) = (x^2+1)^{\\frac{1}{2}}", "f'(x) = -(x^2+1)^{-\\frac{3}{2}}", "f'(x) = \\frac{1}{\\sqrt{x^2+1}}", "f'(x) = (x^2+1)^{-\\frac{3}{2}}"], correct: 3, type: "quotient" },
+                { question: "f(x) = (\\frac{x}{x-1})^2", choices: ["f'(x) = \\frac{2x}{(x-1)^3}", "f'(x) = -\\frac{2x}{(x-1)^3}", "f'(x) = 2(\\frac{x}{x-1})", "f'(x) = \\frac{-2}{(x-1)^3}"], correct: 1, type: "composite" }
             ]
         };
         // --- END: EXPANDED AND CORRECTED QUESTION BANK (20 PER LEVEL) ---
@@ -399,7 +399,7 @@
         let studentInfo = { name: '', class: '', number: '' };
         const motivationalQuotes = [
             "💪 \"คณิตศาสตร์คือกุญแจสู่ความสำเร็จ ลุยเลย!\" 💪",
-            "🚀 \"อนุพันธ์ไม่ยาก แค่ฝึกฝนให้เก่ง!\" �",
+            "🚀 \"อนุพันธ์ไม่ยาก แค่ฝึกฝนให้เก่ง!\" 🚀",
             "⭐ \"ทุกสูตรที่เรียนมา จะนำพาสู่ความสำเร็จ!\" ⭐"
         ];
         // Anti-cheat system
@@ -807,4 +807,3 @@
     </script>
 </body>
 </html>
-�
